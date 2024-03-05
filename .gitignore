@@ -7,3 +7,4 @@ result.obj
 data/
 *.npy
 *.npz
+src/build/demo/base_library.zip

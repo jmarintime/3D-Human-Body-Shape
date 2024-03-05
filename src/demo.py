@@ -1,6 +1,10 @@
 #!/usr/bin/python
 # coding=utf-8
+import os
+os.environ["SM_FRAMEWORK"] = "tf.keras"
 
+from tensorflow import keras
+import segmentation_models as sm
 import numpy as np
 import sys
 from PyQt5 import QtWidgets, QtCore
@@ -24,7 +28,7 @@ class HumanShapeAnalysisDemo(QtWidgets.QMainWindow):
     container.show()
 
     self.mainBox.addWidget(container)
-    self.setWindowTitle("3D Human Body Reshaping with Anthropometric Modeling")
+    self.setWindowTitle("365MC_body_Simulator_Demo")
 
     parentWidget = QtWidgets.QWidget()
     self.box = QtWidgets.QVBoxLayout()
